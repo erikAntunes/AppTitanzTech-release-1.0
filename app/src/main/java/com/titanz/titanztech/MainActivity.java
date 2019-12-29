@@ -15,9 +15,9 @@ import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.tabs.TabLayout;
 
 import com.titanz.titanztech.adapters.ViewPagerAdapter;
-import com.titanz.titanztech.view.FragmentFirst;
-import com.titanz.titanztech.view.FragmentSecond;
-import com.titanz.titanztech.view.FragmentThird;
+import com.titanz.titanztech.view.FragmentServicos;
+import com.titanz.titanztech.view.FragmentPromocoes;
+import com.titanz.titanztech.view.FragmentContato;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -41,9 +41,9 @@ public class MainActivity extends AppCompatActivity {
         //Adicionando Fragments
 
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.AddFragment(new FragmentFirst(),"First" );
-        adapter.AddFragment(new FragmentSecond(),"Second" );
-        adapter.AddFragment(new FragmentThird(),"Third" );
+        adapter.AddFragment(new FragmentServicos(),"Serviços" );
+        adapter.AddFragment(new FragmentPromocoes(),"Promoções" );
+        adapter.AddFragment(new FragmentContato(),"Contato" );
 
         // Adapter Setup
 
