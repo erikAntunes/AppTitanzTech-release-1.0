@@ -19,6 +19,8 @@ import com.titanz.titanztech.view.FragmentServicos;
 import com.titanz.titanztech.view.FragmentPromocoes;
 import com.titanz.titanztech.view.FragmentContato;
 
+import cn.pedant.SweetAlert.SweetAlertDialog;
+
 public class MainActivity extends AppCompatActivity {
 
     private TabLayout tabLayout;
@@ -30,12 +32,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         tabLayout = findViewById(R.id.tablayout_main_id);
         appBarLayout = findViewById(R.id.appbar_main_id);
         viewPager = findViewById(R.id.viewpager_main_id);
 
         ActionBar bar = getSupportActionBar();
+
         bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#000000")));
+
 
 
         //Adicionando Fragments
