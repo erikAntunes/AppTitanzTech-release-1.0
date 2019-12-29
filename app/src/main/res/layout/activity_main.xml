@@ -31,7 +31,7 @@
         app:tabGravity="fill"
         app:tabMode="fixed"
         app:tabTextColor="@color/colorPrimary"
-        app:tabIndicatorColor="@color/colorAccent"
+        app:tabIndicatorColor="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appbar_main_id"
