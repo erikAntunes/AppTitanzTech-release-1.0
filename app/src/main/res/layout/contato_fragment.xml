@@ -6,22 +6,40 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="@color/colorPrimaryDark"
+    android:layout_margin="5dp"
+    android:layout_marginBottom="10dp"
     app:strokeColor="@color/colorPrimary"
-    app:strokeWidth="5dp">
+    android:id="@+id/contato_fragment_view"
+    app:strokeWidth="2dp">
 
 
-    <Button
+    <ImageView
         android:id="@+id/titanz_whatsapp_button_id"
         android:layout_width="150dp"
         android:layout_height="80dp"
-        android:text="Whatsapp"
+        android:src="@drawable/whatsapp_button"
+        android:textColor="@color/colorPrimary"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:textColor="@color/colorPrimary"
-        android:background="@color/colorwhatsapp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.652" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Botão Mágico do \n Whatsapp"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/titanz_whatsapp_button_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.674" />
 </androidx.constraintlayout.widget.ConstraintLayout>
