@@ -1,17 +1,25 @@
 package com.titanz.titanztech.view;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.titanz.titanztech.MainActivity;
 import com.titanz.titanztech.R;
 
 
 public class FragmentContato extends Fragment {
+
+    private Button whatsappButton;
 
     @Nullable
     @Override
@@ -19,7 +27,34 @@ public class FragmentContato extends Fragment {
 
         View view = inflater.inflate(R.layout.contato_fragment,container,false);
 
+        whatsappButton = view.findViewById(R.id.titanz_whatsapp_button_id);
+
+        whatsappButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                irParaTitanz();
+            }
+        });
+
 
         return view;
     }
+
+    public void irParaTitanz(){
+
+        String titanz = "+55 11986661870"; // use country code with your phone number
+        String url = "https://api.whatsapp.com/send?phone=" + titanz;
+        try {
+            PackageManager pm = getContext().getPackageManager();
+            pm.getPackageInfo("com.whatsapp", PackageManager.GET_ACTIVITIES);
+            Intent i = new Intent(Intent.ACTION_VIEW);
+            i.setData(Uri.parse(url));
+            startActivity(i);
+        } catch (PackageManager.NameNotFoundException e) {
+            Toast.makeText(getContext(), "... poxa o Whatsapp não está instalado!!!", Toast.LENGTH_SHORT).show();
+            e.printStackTrace();
+        }
+    }
+
 }
