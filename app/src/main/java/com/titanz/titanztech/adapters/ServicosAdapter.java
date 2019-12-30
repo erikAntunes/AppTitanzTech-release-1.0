@@ -20,9 +20,9 @@ public class ServicosAdapter extends RecyclerView.Adapter<ServicosAdapter.ViewHo
     private List<Servicos> listaServicos;
     //private ServicosListener ServicosListener;
 
-    public ServicosAdapter(List<Servicos> listaPaises){
+    public ServicosAdapter(List<Servicos> listaServicos){
 
-        this.listaServicos = listaPaises;
+        this.listaServicos = listaServicos;
     }
 
 
@@ -38,7 +38,7 @@ public class ServicosAdapter extends RecyclerView.Adapter<ServicosAdapter.ViewHo
     @Override
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, final int i) {
         final Servicos servicos = listaServicos.get(i);
-        viewHolder.setupPais(servicos);
+        viewHolder.setupServicos(servicos);
 
     }
 
@@ -57,7 +57,7 @@ public class ServicosAdapter extends RecyclerView.Adapter<ServicosAdapter.ViewHo
             textDescricaoServicosView = itemView.findViewById(R.id.textDescricaoServicosView_id);
         }
 
-        public void setupPais(Servicos servicos){
+        public void setupServicos(Servicos servicos){
 
             textDescricaoServicosView.setText(servicos.getDescricao());
         }
