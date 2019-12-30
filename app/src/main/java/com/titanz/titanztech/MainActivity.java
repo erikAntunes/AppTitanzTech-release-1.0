@@ -39,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
         viewPager = findViewById(R.id.viewpager_main_id);
 
         ActionBar bar = getSupportActionBar();
-
         bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#000000")));
 
 
