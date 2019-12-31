@@ -4,12 +4,12 @@
     android:layout_width="330dp"
     android:layout_height="150dp"
     android:layout_marginStart="5dp"
-    android:layout_marginBottom="20dp"
+    android:layout_marginBottom="8dp"
     android:layout_marginEnd="5dp"
     android:layout_marginTop="5dp"
     android:gravity="center"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical">
+    android:orientation="horizontal">
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/promocoes_card_view"
@@ -17,45 +17,47 @@
         android:layout_height="match_parent"
         android:backgroundTint="@color/colorPrimaryDark"
         android:layout_gravity="center_horizontal"
-        app:cardCornerRadius="8dp"
+        app:cardCornerRadius="10dp"
         app:strokeColor="@color/colorPrimaryDark"
         app:strokeWidth="5dp">
 
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/promocoes_imageView_id"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/promo_logo"
+            android:layout_gravity="left|center"
+            />
 
 
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="280dp"
-            android:layout_height="130dp"
-            android:layout_gravity="center"
-            android:backgroundTint="@color/colorPrimaryDark"
-            app:cardCornerRadius="8dp">
+        <TextView
+            android:id="@+id/textPromocoesDescricaoView_id"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:gravity="center"
+            android:text="Desenvolvimento \n Android Mobile"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/textPromocoesDescricaoView_id"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="top"
-                android:gravity="center"
-                android:text="Desenvolvimento de APP Comercial"
-                android:textColor="@color/colorPrimary"
-                android:textSize="25sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textValorPromocoesView_id"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom|center"
-                android:gravity="center"
-                android:text="R$ 500,00"
-                android:textColor="@color/colorAccent"
-                android:textSize="40sp"
-                android:textStyle="bold" />
-
-
-
-
-        </com.google.android.material.card.MaterialCardView>
+        <TextView
+            android:id="@+id/textValorPromocoesView_id"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:gravity="center"
+            android:layout_marginBottom="15dp"
+            android:text="01"
+            android:padding="5dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:background="@color/colorPrimary"/>
 
     </com.google.android.material.card.MaterialCardView>
 
