@@ -2,14 +2,14 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="330dp"
-    android:layout_height="150dp"
+    android:layout_height="100dp"
     android:layout_marginStart="5dp"
     android:layout_marginBottom="8dp"
     android:layout_marginEnd="5dp"
     android:layout_marginTop="5dp"
     android:gravity="center"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical">
+    android:orientation="horizontal">
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/servicos_card_view"
@@ -21,28 +21,41 @@
         app:strokeColor="@color/colorPrimaryDark"
         app:strokeWidth="5dp">
 
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/servicos_imageView_id"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/titanz_icon"
+            android:layout_gravity="left|center"
+            />
 
-
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="280dp"
-            android:layout_height="130dp"
-            android:layout_gravity="center"
-            android:backgroundTint="@color/colorPrimaryDark"
-            app:cardCornerRadius="8dp">
 
             <TextView
                 android:id="@+id/textDescricaoServicosView_id"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
                 android:gravity="center"
-                android:text="Desenvolvimento de Aplicativos \n Android"
+                android:layout_marginRight="40dp"
+                android:text="Desenvolvimento \n Android Mobile"
                 android:textColor="@color/colorPrimary"
-                android:textSize="25sp"
+                android:textSize="21sp"
                 android:textStyle="bold" />
 
-        </com.google.android.material.card.MaterialCardView>
+        <TextView
+            android:id="@+id/servicos_textView_id_id"
+            android:layout_width="23dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:gravity="center"
+            android:layout_marginRight="5dp"
+            android:text="01"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:background="@color/colorPrimary"/>
 
-    </com.google.android.material.card.MaterialCardView>
+        </com.google.android.material.card.MaterialCardView>
 
 </LinearLayout>
