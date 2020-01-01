@@ -21,8 +21,8 @@
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/promocoes_imageView_id"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
             android:layout_marginLeft="10dp"
             android:src="@drawable/promo_logo"
             android:layout_gravity="left|center"
