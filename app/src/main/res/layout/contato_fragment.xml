@@ -23,34 +23,55 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.652" />
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView2"
+        app:layout_constraintVertical_bias="0.07" />
 
     <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="20dp"
+        android:layout_marginTop="20dp"
         android:backgroundTint="@color/colorPrimary"
-        app:layout_constraintBottom_toTopOf="@+id/titanz_whatsapp_button_id"
+        app:cardCornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.674">
+        app:layout_constraintTop_toTopOf="parent">
 
 
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Das 9:00 às 19:00 \n Whatsapp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </com.google.android.material.card.MaterialCardView>
+
+   <com.google.android.material.card.MaterialCardView
+       android:layout_marginTop="20dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:cardCornerRadius="20dp"
+       android:backgroundTint="@color/colorPrimary"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.501"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/titanz_whatsapp_button_id">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Das 9:00 às 19:00 \n Whatsapp"
-        android:textSize="25sp"
-        android:padding="5dp"
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:gravity="center"
         android:textStyle="bold"
+        android:padding="5dp"
+        android:textSize="20sp"
         android:textColor="@color/colorPrimaryDark"
-         />
-    </com.google.android.material.card.MaterialCardView>
+        android:text="Rua Carlos Facchina N 571 \n CEP - 04427-020"
+        />
+   </com.google.android.material.card.MaterialCardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
