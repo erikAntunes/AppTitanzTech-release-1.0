@@ -30,7 +30,7 @@
 
 
         <TextView
-            android:id="@+id/textPromocoesDescricaoView_id"
+            android:id="@+id/textPromocoesNomeView_id"
             android:layout_marginLeft="18dp"
             android:layout_marginTop="15dp"
             android:layout_width="200dp"

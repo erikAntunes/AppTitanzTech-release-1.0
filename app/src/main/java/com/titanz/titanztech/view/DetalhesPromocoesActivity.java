@@ -7,20 +7,24 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.squareup.picasso.Picasso;
 import com.titanz.titanztech.R;
+import com.titanz.titanztech.models.Promocoes;
 
 import cn.pedant.SweetAlert.SweetAlertDialog;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class DetalhesPromocoesActivity extends AppCompatActivity {
 
-    private CircleImageView promocoesImageView;
+    private CircleImageView detalhePromocoesImageView;
     private TextView detalhePromocoesTextView;
     private TextView nomeDetalhePromocoesTextView;
+    private TextView precoDetalhesPromocoesTextView;
     private ImageView whatsappButton;
     private ImageView homeButtonServicos;
 
@@ -45,11 +49,39 @@ public class DetalhesPromocoesActivity extends AppCompatActivity {
             }
         },1000);
 
-        promocoesImageView = findViewById(R.id.promocoes_imageView_id);
+        whatsappButton = findViewById(R.id.whatsapp_button_promocoes_imageView);
+        whatsappButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                irParaTitanz();
+            }
+        });
+
+        homeButtonServicos = findViewById(R.id.home_button_promocoes_imageView);
+        homeButtonServicos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                irParaHome();
+            }
+        });
+
+        detalhePromocoesImageView = findViewById(R.id.detalhes_promocoes_circleImageView);
         detalhePromocoesTextView = findViewById(R.id.detalhes_promocoes_textView);
         nomeDetalhePromocoesTextView = findViewById(R.id.nome_detalhes_promocoes_textView);
+        precoDetalhesPromocoesTextView = findViewById(R.id.preco_detalhes_promocoes_textView);
 
-        
+        Intent intent = getIntent();
+
+        Bundle bundle = intent.getExtras();
+
+        Promocoes promocao = (Promocoes) bundle.getSerializable("PROMOCOES");
+
+
+        nomeDetalhePromocoesTextView.setText(promocao.getNome());
+        detalhePromocoesTextView.setText(promocao.getDescricao());
+        nomeDetalhePromocoesTextView.setText(promocao.getNome());
+        Picasso.get().load(promocao.getImagem()).into(detalhePromocoesImageView);
+        precoDetalhesPromocoesTextView.setText(promocao.getValor());
 
 
     }

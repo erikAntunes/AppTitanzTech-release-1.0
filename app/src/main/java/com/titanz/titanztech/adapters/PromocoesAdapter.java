@@ -8,11 +8,14 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.squareup.picasso.Picasso;
 import com.titanz.titanztech.R;
 import com.titanz.titanztech.interfaces.PromocoesListener;
 import com.titanz.titanztech.models.Promocoes;
 
 import java.util.List;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class PromocoesAdapter extends RecyclerView.Adapter<PromocoesAdapter.DetalhePromocoesViewHolder> {
 
@@ -67,22 +70,26 @@ public class PromocoesAdapter extends RecyclerView.Adapter<PromocoesAdapter.Deta
 
     class DetalhePromocoesViewHolder extends RecyclerView.ViewHolder {
 
-        private TextView textDescricaoPromocoesView;
+        private TextView texNomePromocoesView;
 
         private TextView textValorPromocoesView;
+
+
 
         public DetalhePromocoesViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            textDescricaoPromocoesView = itemView.findViewById(R.id.textPromocoesDescricaoView_id);
+            texNomePromocoesView = itemView.findViewById(R.id.textPromocoesNomeView_id);
             textValorPromocoesView = itemView.findViewById(R.id.textValorPromocoesView_id);
+
 
         }
 
         public void setupPromocoes(Promocoes promocoes){
 
-            textDescricaoPromocoesView.setText(promocoes.getNome());
             textValorPromocoesView.setText(promocoes.getValor());
+            texNomePromocoesView.setText(promocoes.getNome());
+
         }
 
     }
