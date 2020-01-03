@@ -67,4 +67,36 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/detalhes_servicos_circleImageView" />
 
+    <ImageView
+        android:id="@+id/whatsapp_button_servicos_imageView"
+        android:src="@drawable/whatsapp_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/nome_detalhes_servico_textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/detalhes_servicos_circleImageView"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/home_button_servicos_imageView"
+        android:src="@drawable/button_voltar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/nome_detalhes_servico_textView"
+        app:layout_constraintEnd_toStartOf="@+id/detalhes_servicos_circleImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Solicitar"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/whatsapp_button_servicos_imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/detalhes_servicos_circleImageView" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
