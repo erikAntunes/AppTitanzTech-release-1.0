@@ -34,8 +34,9 @@ public class FragmentServicos extends Fragment implements ServicosListener {
         ArrayList<Servicos> servicosArrayList = new ArrayList<>();
 
         Servicos servico1 = new Servicos();
-        servico1.setNome("Desenvolvimento - Android Mobile");
+        servico1.setNome("Desenvolvimento  Android Mobile");
         servico1.setImagem("https://lh3.googleusercontent.com/juJbKDXGoATNAavlLhVNmiWCGh4PdqXBzR30Uz1XqXtPyq46QwoXwEuQojLmMTnVryTrYJWQnB15nWoCbsfadaJVaJKbouwf9m_IoFGPpxo7iFmDWawhTXGYza5urJkuihp6GPlI8g9qjb6311AlzX-xy4YHWkWMSn9Rvc15n7sB2qSdfWhgcQ6JXYQII1x_GSvi9ngWBYM_G0aQlvvJzRkDmKT6pQ9UfwX7JtydZ8MiU7SeDcPAIxOyqUFOMjKmI75smbVRU_aH0XOCKh9Y_l3OJoWmtZb5xIUW1tqLKu5Vpech8RV3RRGpfWBPEIthjxMGWGuLZFiZu9pdzY27xQO1AqEYyvqqkHmMvyQVEyvoQlNHv1LgUWBk0Lfw0CvmIzh3gbpVUIh5-d6N8NtEoMwfGV1a6eM8wPi6sFC6qjnlQhmzFOaisY5gQ-DkXj-Bq7xSKs0NyBqgfuMJmFTuzjgJuzRHjimRDTcK6_XvSiTItgE2TwlBt78apB1UWAjbeYd1xvDiSbf7lhZo-KbukycSYt1Zl365d4kaEF7Y_3E33ydyyuh0DlMTIRsk38Pnddp0JOO_BFt9c9--dshPAlQpUuxHnpMs10dVJVnh6mDqDfB7p0kumeO0YpieY9EDqGYxRY9iP9Lzku-RAwuoQqDrTQTUViRI0YbLinqPFWRCzTT3mBWBAZR9d8JXJ2RgrSRwHTKHEUJdiFeDuE8kHal4e--bwPirl6WprRwHmCw-lbmx=s800-no");
+        servico1.setDescricao("A Titanz Tech, oferece um serviço único na Região Sul de São Paulo, com desenvolvimento de Aplicativos Android Mobile, focados em Comercios, Vendas Digitais e Delivery, cobrando um preço justo e acessivel para os empreendedores da Era Digital.");
         servico1.setId("01");
         servicosArrayList.add(servico1);
         Servicos servico2 = new Servicos();
@@ -54,12 +55,12 @@ public class FragmentServicos extends Fragment implements ServicosListener {
         servico4.setId("04");
         servicosArrayList.add(servico4);
         Servicos servico5 = new Servicos();
-        servico5.setNome("Troca de Teclado - Notebook");
+        servico5.setNome("Troca de Teclado   Notebook");
         servico5.setImagem("https://lh3.googleusercontent.com/IV9J4cs3zLnzPGIvTGeEGuvPxx__s5b6MnbWH7PLImVKOrdOcWobqKuy_64Wz2ndhBuR2AYpNgxJpGrS463ohyDMtzU5x_RHxvHqC58RAJ1jzaaqbi2zjPKkdi0XF5WUBrWNj9CyFSaZhK4wAs5UyVLTGLQbS191qgggFDtVaiQPbGz95x4bHLS7vUyBLOV5nFidmgIHCpqCuuQrJxwkgPYVVmBQb3l3b-zM8kppGTchYdudbYrxWiOIYNs4iKcp5UiwlJFwDbqvapJ2C0UbXlQM2aCvC9WF5KecC9e10qlRKItXm6QL7tDaJFvbT6cLo-4_G1x6JhxEJY_MNFPDipvHd-K64EuZCd5oaD6H6K5KPi3jK-qFwzIgCsYHxB6iaSua9fU1feWPLoLKSIc2YrkiIDgofMlb3vHpvAbCuucdQxa240pP-hOfO-r-uA1Ty-jFXrTa0YcBw6ABix4kaPwzpdAAXQmAJNtOQi54INvdwXGUJaB3sRblJPfjjslBT4dLPrVM0hsdpx4biUlAN1YaFoivfjK831YpYRZV986kow0F_mpcmIB021g5tz4BWKMyjmpe8i-0PKRRNciqeMJYUCKqhwOGzbqwHkZxnna6nPLXjYpt2gufT8tLlTOk3WuUIA90Y8A9SWR6_xzeAC4HF3_l-H1IDREvNd6OryUd-beAyzCO_a7AUIMmg41QYbQpvdluNCeb0GxC4QxQrFC0kH2JkmOixS5URNORKbt6lUOj=s800-no");
         servico5.setId("05");
         servicosArrayList.add(servico5);
         Servicos servico6 = new Servicos();
-        servico6.setNome("Troca de HD - Notebook / Desktop");
+        servico6.setNome("Troca de HD   Notebook / Desktop");
         servico6.setImagem("https://lh3.googleusercontent.com/CctkWQbiTQlcANglvfnP-O2F5jQnCfDTIlIuRsOmyjA7pf8sNt4ykpD3mOW0NZ4kVH7qyzW6tRZdNWyycejpKFYsUJNHfFPFlSzmCszKqqxpMf2NZvpAv34w0RId84kYr9FRixiOYGErGq5pV38BtJSUcrI-ibeIqf2A31-QPR_YV-gdVhaHrztq6mLCxQ-Jqobf1hE2UjDHyV3vHeZyJnch2XQEPw9I21icpwt1rkd9IM3CelUmKD8Iv_jbFkzeiEuMcjVZe4zjzTrzDKhIzCnJWYRoZsUodEozPPpOZtSeTWOOny4TKPen0dfxiLkchn92bP2rKAotqPG_GndFCy8BBaCsMPnI68eryOO3iG2UblxlFkdO1tI2pQM1UDwCORuUDIPg_Ts5KCjqBzc7g9dmNosofVmtPrezmL6yLfCI_Oqu-G7TUw1lr0U6AkfHQL_M5QYX5g1O-meIEx0jviibHLuhMq4eq8LyqztnQSh4O0arYBnb4XV0egix7S3zXKYtd83Vzu3rb8stwUile-m1Ebb8JMMfl9BOaHl3heJvfXuTJHh-ETollAnrvpKbo1RGeg6zK2mD5MY0qZDAX_AUzyadWNXSdSQkSaLLUXEXovaak0UVwe_0WkzkOifvfbMsNKzfXpTAJ2wEUtvXT8d-BRKgJcte2UT2q2sgLtrXL9CPKuzd8J5gDmxY9HfkntDBvPGqr2ED-YvX7a-cgTkHU9amxcUolFV0LJ6zZm5FGs0C=s800-no");
         servico6.setId("06");
         servicosArrayList.add(servico6);
@@ -74,17 +75,17 @@ public class FragmentServicos extends Fragment implements ServicosListener {
         servico8.setId("08");
         servicosArrayList.add(servico8);
         Servicos servico9 = new Servicos();
-        servico9.setNome("Upgrade - HD para SSD");
+        servico9.setNome("Upgrade   HD para SSD");
         servico9.setImagem("https://lh3.googleusercontent.com/3YZb74LnL0xLIKCe5OT2Um-rS4zEaI_bIv18S3wNrJFGUrdN-jHMLUTEJB0C0HE7lkZmGWgbiIoyOGgi_mA2JldCVOY2sQUYMGgVsUAcmbNCALg2rIYw05NP4yqsIYzSTdGw3ueLAjOGPdbqkdUxI7VcgAKcA1B2xcbYZo4RVSvsx93Vg26x9snrBTsRjtr1_T1ZSBmrsNhmGhlfRcjZ7Lvu5DdaZPEiW21hLWb2DNJbnOquViK0VhLSdru1pOF4e529i8MM4vR9m1JqTaJAytJMiAOZYT-yKa5WKjdikhbVnx66kXIL697YKATgLGHsH85UcBswLAu6mG5PWeMeNxCxgePdceHghLpaw7EOGMbrA9u4tKuyyFphfVXmScpI7fj6yA_kLu2V7N9fIQUA6zbKZHFqAZmIH8T7AJ3N85FclR3efHfOUlqqM90WTxDY4pooyBLz6XB12NeYi3Ry7MN-6UiQ2ygEOO4v9kijXGjjOvyekj7ngX21tn3nSUbRroCQ91cPxcwKqKlS68FVMMILsDcAg0BPtuhhQ6CRJAJ-9MTwtWShK2xgL-OJswGoBXAcLUQHiWA4JE8FDyoXtnnvjox6DP3vCki8d_TFCK4yaAaJaNaOA3wAM7HAAd5R7ROcYpdzNUCuuUxoX5bh32T1UfRRGDiZ2nAFX35aD85e-5fDszKnJmOOtpfSu4ZqsVZ4wCgvEJ6L4MwywLWpoH2PC3oVa9Zb-1Ff9nWeZu3zIaG1=s800-no");
         servico9.setId("09");
         servicosArrayList.add(servico9);
         Servicos servico10 = new Servicos();
-        servico10.setNome("Upgrade - Processadores");
+        servico10.setNome("Upgrade   Processadores");
         servico10.setImagem("https://lh3.googleusercontent.com/WLCJFJZBN8AT_H6LSQTAJKnsRO7O5G-baSPJU-tWPr2bq9AV_1drX3cRHpY8Fs46KE651wmPbzyVcB_TTGZLExeleerb9QHsgc829ua6Hxaj-n3tHHS14nF6UAR18c0AzjJf8j5J4pbiIOTObxsn9GSGwM8Yyr4AE0buobqVMirQ5wO2HISO9-dl8w5eSpKI-BzhEmVSNFHG3egcSglt47ujUuKB2hPvD3Um_TLISX1Qo7ORTsQ7Qhh1B5EFEfeTt0blxe43saatu8WAEgg9Y5tQ97R5_9WSNnZClvXSU5ARgo_Jc4bD2WY-cn8J_azjYVFAJfKb0VuYki3f2h6ZVgDzsa-4UGV86gLNGZ2En1vMzWO4dDjR09FO7lvXk3LFgWa59HnxPwWth-b6wbbd4IdaMn7MJfMMpc09z5AByJaOwWjhf5FfulgAU1pbgc-uAYI0r7noCYWry6oiE1wGb_pOJ__lebAuoCDUxPFQ80YvFDe5176ahgBgHIoh9cuitEArNnvCv2S9Vc3uZl7GTIrbXR5zI8jxzvYBkPGwn20mr8MRRZMxEQkXqvIQLy2yV_EELgHSCRDoYkYkkyIlZGOlJ5jhb7sQBwojfyh2S2nHQGNmNLjtW-4f4pnAJGRXZ4p2n5Bx780ll_oxHHUJzMuxdVhodJ0Jd31MnTQjqkSiM661qIoIsCmRytgLKH8RFGk23a3Ae_gifjEtAobiOGClv77FOam6aEFTqZmG_om_jDWa=s800-no");
         servico10.setId("10");
         servicosArrayList.add(servico10);
         Servicos servico11 = new Servicos();
-        servico11.setNome("Limpeza - Troca de Pasta Termica");
+        servico11.setNome("Limpeza   Troca de Pasta Termica");
         servico11.setImagem("https://lh3.googleusercontent.com/KSNYaHXCw9vbP7jTnJ_sBzKQMPmiQ5DuERxjU8JjEBnr7wq2TmXANYrmzIHbCH-x4KKvo1c9_Y6gtutAsnqWCAaNliSfOjEuBX39er8XDPGa8akAUEYbPadImRbfxeJEDlYru1bA--0MMXbH6q7Su38osM433Laf4vZxbLOwSmkaStyw6xq-vXevm9Qvue1xcba6CI2uMXLQbdRdwydbHVky4nvOz_hmVWCgxy4BGUAgCRZxY-HvXfBl4yM0Au2Cpri-DlQyGGOqklfAbR-vwwG6RJOboGRtEGBYFYNuCbfIa6koBs3fzy2WArNfm7esRJlNhV97Y5fsVjHlpgT5sLVPYGg8hPWC3cmft5MGVAqyt2N5QrlEDDaSBcJiMIPBhStG4yaxt8TgCpjQ27C5--D1dcfq0Ap9ZnA9UJzglcAsjK2zCkiqCRExoRgfEQCOD7wAAymFjYUygdvpJRzXwNbgVP0zR-g6sOuREgDCyVWpBZvWRbGi5r6A75ZSlzDlQRJcYqqfYvlq2kYlE2EdF4c8ambi9TVbWmeJXmNDPT7qM9C7oONdhpag-ctM6Wd5Hl6mKPU6FZqApPTGxgxFw4sOQadXWNwNfSGB7B19ZVoux1Uo0sQ4I_xKCAjhq4ksjSwavCdxLzwhp8jyR-b_l0VI_5IQhIJXeQK2ds9OWnJd9rIY2d7bz2TUCdRil-KbJirBOimKN7qYg6bTMGk7qEK_0GrKAlQ_7_ZFMuVqhe70RwZP=s800-no");
         servico11.setId("11");
         servicosArrayList.add(servico11);
@@ -105,7 +106,7 @@ public class FragmentServicos extends Fragment implements ServicosListener {
         Intent intent = new Intent(getContext(), DestalhesServicosActivity.class);
 
         Bundle bundle = new Bundle();
-        bundle.putSerializable("SERVIÇOS", servico);
+        bundle.putSerializable("SERVICOS", servico);
 
         intent.putExtras(bundle);
 
