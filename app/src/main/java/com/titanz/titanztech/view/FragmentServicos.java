@@ -113,7 +113,7 @@ public class FragmentServicos extends Fragment implements ServicosListener {
 
     public void onServicoClicado(Servicos servico) {
 
-        Intent intent = new Intent(getContext(), DestalhesServicosActivity.class);
+        Intent intent = new Intent(getContext(), DetalhesServicosActivity.class);
 
         Bundle bundle = new Bundle();
         bundle.putSerializable("SERVICOS", servico);

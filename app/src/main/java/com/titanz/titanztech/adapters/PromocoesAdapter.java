@@ -9,19 +9,22 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.titanz.titanztech.R;
+import com.titanz.titanztech.interfaces.PromocoesListener;
 import com.titanz.titanztech.models.Promocoes;
 
 import java.util.List;
 
-public class PromocoesAdapter extends RecyclerView.Adapter<PromocoesAdapter.ViewHolder> {
+public class PromocoesAdapter extends RecyclerView.Adapter<PromocoesAdapter.DetalhePromocoesViewHolder> {
 
 
 
     private List<Promocoes> listaPromocoes;
-    //private PromocoesListener ServicosListener;
 
-    public PromocoesAdapter(List<Promocoes> listaPromocoes){
+    private PromocoesListener promocoesListener;
 
+    public PromocoesAdapter(List<Promocoes> listaPromocoes, PromocoesListener promocoesListener){
+
+        this.promocoesListener = promocoesListener;
         this.listaPromocoes = listaPromocoes;
     }
 
@@ -29,16 +32,31 @@ public class PromocoesAdapter extends RecyclerView.Adapter<PromocoesAdapter.View
 
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+    public DetalhePromocoesViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+
         View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.celula_promocoes,viewGroup,false);
-        return new ViewHolder(view);
+
+        DetalhePromocoesViewHolder detalhePromocoesViewHolder = new DetalhePromocoesViewHolder(view);
+
+        return  detalhePromocoesViewHolder;
+
     }
 
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder viewHolder, final int i) {
+    public void onBindViewHolder(@NonNull DetalhePromocoesViewHolder detalhePromocoesViewHolder, final int i) {
         final Promocoes promocoes = listaPromocoes.get(i);
-        viewHolder.setupPromocoes(promocoes);
+
+        detalhePromocoesViewHolder.setupPromocoes(promocoes);
+
+        detalhePromocoesViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                promocoesListener.onPromocaoClicada(listaPromocoes.get(i));
+
+            }
+        });
 
     }
 
@@ -47,12 +65,13 @@ public class PromocoesAdapter extends RecyclerView.Adapter<PromocoesAdapter.View
         return listaPromocoes.size();
     }
 
-    class ViewHolder extends RecyclerView.ViewHolder {
+    class DetalhePromocoesViewHolder extends RecyclerView.ViewHolder {
 
         private TextView textDescricaoPromocoesView;
+
         private TextView textValorPromocoesView;
 
-        public ViewHolder(@NonNull View itemView) {
+        public DetalhePromocoesViewHolder(@NonNull View itemView) {
             super(itemView);
 
             textDescricaoPromocoesView = itemView.findViewById(R.id.textPromocoesDescricaoView_id);
@@ -62,7 +81,7 @@ public class PromocoesAdapter extends RecyclerView.Adapter<PromocoesAdapter.View
 
         public void setupPromocoes(Promocoes promocoes){
 
-            textDescricaoPromocoesView.setText(promocoes.getDescricao());
+            textDescricaoPromocoesView.setText(promocoes.getNome());
             textValorPromocoesView.setText(promocoes.getValor());
         }
 

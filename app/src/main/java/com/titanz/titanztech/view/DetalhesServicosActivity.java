@@ -19,11 +19,11 @@ import com.titanz.titanztech.models.Servicos;
 import cn.pedant.SweetAlert.SweetAlertDialog;
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class DestalhesServicosActivity extends AppCompatActivity {
+public class DetalhesServicosActivity extends AppCompatActivity {
 
     private CircleImageView servicoImageView;
     private TextView detalheServicoTextView;
-    private TextView nomeDetalheServicoTextViewm;
+    private TextView nomeDetalheServicoTextView;
     private ImageView whatsappButton;
     private ImageView homeButtonServicos;
 
@@ -50,7 +50,7 @@ public class DestalhesServicosActivity extends AppCompatActivity {
 
         servicoImageView = findViewById(R.id.detalhes_servicos_circleImageView);
         detalheServicoTextView = findViewById(R.id.detalhes_servico_textView);
-        nomeDetalheServicoTextViewm = findViewById(R.id.nome_detalhes_servico_textView);
+        nomeDetalheServicoTextView = findViewById(R.id.nome_detalhes_servico_textView);
 
         whatsappButton = findViewById(R.id.whatsapp_button_servicos_imageView);
         whatsappButton.setOnClickListener(new View.OnClickListener() {
@@ -76,7 +76,7 @@ public class DestalhesServicosActivity extends AppCompatActivity {
 
         Servicos servico = (Servicos) bundle.getSerializable("SERVICOS");
 
-        nomeDetalheServicoTextViewm.setText(servico.getNome());
+        nomeDetalheServicoTextView.setText(servico.getNome());
         detalheServicoTextView.setText(servico.getDescricao());
         Picasso.get().load(servico.getImagem()).into(servicoImageView);
 
