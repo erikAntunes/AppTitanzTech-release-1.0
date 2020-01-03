@@ -35,7 +35,7 @@ public class FragmentPromocoes extends Fragment implements PromocoesListener {
         Promocoes promocoes1 = new Promocoes();
         promocoes1.setNome("Aplicativo Android Comercial");
         promocoes1.setImagem("https://lh3.googleusercontent.com/juJbKDXGoATNAavlLhVNmiWCGh4PdqXBzR30Uz1XqXtPyq46QwoXwEuQojLmMTnVryTrYJWQnB15nWoCbsfadaJVaJKbouwf9m_IoFGPpxo7iFmDWawhTXGYza5urJkuihp6GPlI8g9qjb6311AlzX-xy4YHWkWMSn9Rvc15n7sB2qSdfWhgcQ6JXYQII1x_GSvi9ngWBYM_G0aQlvvJzRkDmKT6pQ9UfwX7JtydZ8MiU7SeDcPAIxOyqUFOMjKmI75smbVRU_aH0XOCKh9Y_l3OJoWmtZb5xIUW1tqLKu5Vpech8RV3RRGpfWBPEIthjxMGWGuLZFiZu9pdzY27xQO1AqEYyvqqkHmMvyQVEyvoQlNHv1LgUWBk0Lfw0CvmIzh3gbpVUIh5-d6N8NtEoMwfGV1a6eM8wPi6sFC6qjnlQhmzFOaisY5gQ-DkXj-Bq7xSKs0NyBqgfuMJmFTuzjgJuzRHjimRDTcK6_XvSiTItgE2TwlBt78apB1UWAjbeYd1xvDiSbf7lhZo-KbukycSYt1Zl365d4kaEF7Y_3E33ydyyuh0DlMTIRsk38Pnddp0JOO_BFt9c9--dshPAlQpUuxHnpMs10dVJVnh6mDqDfB7p0kumeO0YpieY9EDqGYxRY9iP9Lzku-RAwuoQqDrTQTUViRI0YbLinqPFWRCzTT3mBWBAZR9d8JXJ2RgrSRwHTKHEUJdiFeDuE8kHal4e--bwPirl6WprRwHmCw-lbmx=s800-no");
-        promocoes1.setDescricao("Descrição Breve, para teste");
+        promocoes1.setDescricao("Por um preço acessível, nós da Titanz Tech desenvolvemos um aplicativo comercial para vendas digitais, com um Design único seguindo os padrões da Marca do comerciante, contendo um catalogo descritivo de seus produtos e promoções, facilitando a vida do cliente, que pode fazer pedidos de maneira prática, pois Linkamos o Aplicativo diretamente ao Whatsapp do comerciante. Após o desenvolvimento do aplicativo, a Titanz Tech irá publica-lo na Google Play Store, e ele ficará disponível para todo o Mundo.");
         promocoes1.setValor("R$ 500,00");
         promocoesArrayList.add(promocoes1);
 
