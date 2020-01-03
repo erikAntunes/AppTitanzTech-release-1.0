@@ -1,6 +1,8 @@
 package com.titanz.titanztech.models;
 
-public class Servicos {
+import java.io.Serializable;
+
+public class Servicos implements Serializable {
 
     private String Nome;
 
@@ -26,19 +28,19 @@ public class Servicos {
         this.id = id;
     }
 
-    public String getNome() {
-        return Nome;
-    }
-
-    public void setNome(String nome) {
-        Nome = nome;
-    }
-
     public String getDescricao() {
         return Descricao;
     }
 
     public void setDescricao(String descricao) {
         Descricao = descricao;
+    }
+
+    public String getNome() {
+        return Nome;
+    }
+
+    public void setNome(String nome) {
+        Nome = nome;
     }
 }

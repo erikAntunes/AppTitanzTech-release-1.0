@@ -3,7 +3,6 @@ package com.titanz.titanztech.adapters;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -11,21 +10,23 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.squareup.picasso.Picasso;
 import com.titanz.titanztech.R;
+import com.titanz.titanztech.interfaces.ServicosListener;
 import com.titanz.titanztech.models.Servicos;
 
 import java.util.List;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class ServicosAdapter extends RecyclerView.Adapter<ServicosAdapter.ViewHolder> {
-
+public class ServicosAdapter extends RecyclerView.Adapter<ServicosAdapter.DetalheServicosViewHolder> {
 
 
     private List<Servicos> listaServicos;
-    //private ServicosListener ServicosListener;
 
-    public ServicosAdapter(List<Servicos> listaServicos){
+    private ServicosListener servicosListener;
 
+    public ServicosAdapter(List<Servicos> listaServicos, ServicosListener servicosListener){
+
+        this.servicosListener = servicosListener;
         this.listaServicos = listaServicos;
     }
 
@@ -33,16 +34,28 @@ public class ServicosAdapter extends RecyclerView.Adapter<ServicosAdapter.ViewHo
 
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+    public ServicosAdapter.DetalheServicosViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+
         View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.celula_servicos,viewGroup,false);
-        return new ViewHolder(view);
+
+        DetalheServicosViewHolder viewHolderDetalhe = new DetalheServicosViewHolder(view);
+
+        return viewHolderDetalhe;
     }
 
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder viewHolder, final int i) {
+    public void onBindViewHolder(@NonNull DetalheServicosViewHolder detalheServicosViewHolder, final int i) {
         final Servicos servicos = listaServicos.get(i);
-        viewHolder.setupServicos(servicos);
+
+        detalheServicosViewHolder.setupServicos(servicos);
+
+        detalheServicosViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                servicosListener.onServicoClicado(listaServicos.get(i));
+            }
+        });
 
     }
 
@@ -51,7 +64,7 @@ public class ServicosAdapter extends RecyclerView.Adapter<ServicosAdapter.ViewHo
         return listaServicos.size();
     }
 
-    class ViewHolder extends RecyclerView.ViewHolder {
+    class DetalheServicosViewHolder extends RecyclerView.ViewHolder {
 
         private TextView textDescricaoServicosView;
 
@@ -59,7 +72,7 @@ public class ServicosAdapter extends RecyclerView.Adapter<ServicosAdapter.ViewHo
 
         private CircleImageView servicosImageView;
 
-        public ViewHolder(@NonNull View itemView) {
+        public DetalheServicosViewHolder(@NonNull View itemView) {
             super(itemView);
 
             textDescricaoServicosView = itemView.findViewById(R.id.textDescricaoServicosView_id);
@@ -69,7 +82,7 @@ public class ServicosAdapter extends RecyclerView.Adapter<ServicosAdapter.ViewHo
 
         public void setupServicos(Servicos servicos){
 
-            textDescricaoServicosView.setText(servicos.getDescricao());
+            textDescricaoServicosView.setText(servicos.getNome());
             textIdServicosView.setText(servicos.getId());
             Picasso.get().load(servicos.getImagem()).into(servicosImageView);
         }

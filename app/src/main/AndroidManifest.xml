@@ -14,8 +14,11 @@
         android:roundIcon="@drawable/titanz_icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SplashActivity"
-                    android:screenOrientation="portrait">
+        <activity android:name=".view.DetalhesPromocoesActivity"></activity>
+        <activity android:name=".view.DestalhesServicosActivity" />
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
