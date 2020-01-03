@@ -83,18 +83,20 @@ public class FragmentServicos extends Fragment implements ServicosListener {
         servicosArrayList.add(servico8);
         Servicos servico9 = new Servicos();
         servico9.setNome("Upgrade   HD para SSD");
-        
+        servico9.setDescricao("O HD é responsavel por armazenar e rodar o Sistema Operacional do computador, e por ser um componente desenvolvido há duas decádas ele acaba sendo um dos principais vilões das novas plataformas com processadores de alto desempenho, justamente por estar defazado. Nós substituímos os HDs padrões por SSDs, que utilizam memórias flash de alta taxa de leitura e escrita, multiplicando o ganho de velocidade em até 10X");
         servico9.setImagem("https://lh3.googleusercontent.com/3YZb74LnL0xLIKCe5OT2Um-rS4zEaI_bIv18S3wNrJFGUrdN-jHMLUTEJB0C0HE7lkZmGWgbiIoyOGgi_mA2JldCVOY2sQUYMGgVsUAcmbNCALg2rIYw05NP4yqsIYzSTdGw3ueLAjOGPdbqkdUxI7VcgAKcA1B2xcbYZo4RVSvsx93Vg26x9snrBTsRjtr1_T1ZSBmrsNhmGhlfRcjZ7Lvu5DdaZPEiW21hLWb2DNJbnOquViK0VhLSdru1pOF4e529i8MM4vR9m1JqTaJAytJMiAOZYT-yKa5WKjdikhbVnx66kXIL697YKATgLGHsH85UcBswLAu6mG5PWeMeNxCxgePdceHghLpaw7EOGMbrA9u4tKuyyFphfVXmScpI7fj6yA_kLu2V7N9fIQUA6zbKZHFqAZmIH8T7AJ3N85FclR3efHfOUlqqM90WTxDY4pooyBLz6XB12NeYi3Ry7MN-6UiQ2ygEOO4v9kijXGjjOvyekj7ngX21tn3nSUbRroCQ91cPxcwKqKlS68FVMMILsDcAg0BPtuhhQ6CRJAJ-9MTwtWShK2xgL-OJswGoBXAcLUQHiWA4JE8FDyoXtnnvjox6DP3vCki8d_TFCK4yaAaJaNaOA3wAM7HAAd5R7ROcYpdzNUCuuUxoX5bh32T1UfRRGDiZ2nAFX35aD85e-5fDszKnJmOOtpfSu4ZqsVZ4wCgvEJ6L4MwywLWpoH2PC3oVa9Zb-1Ff9nWeZu3zIaG1=s800-no");
         servico9.setId("09");
         servicosArrayList.add(servico9);
         Servicos servico10 = new Servicos();
         servico10.setNome("Upgrade   Processadores");
         servico10.setImagem("https://lh3.googleusercontent.com/WLCJFJZBN8AT_H6LSQTAJKnsRO7O5G-baSPJU-tWPr2bq9AV_1drX3cRHpY8Fs46KE651wmPbzyVcB_TTGZLExeleerb9QHsgc829ua6Hxaj-n3tHHS14nF6UAR18c0AzjJf8j5J4pbiIOTObxsn9GSGwM8Yyr4AE0buobqVMirQ5wO2HISO9-dl8w5eSpKI-BzhEmVSNFHG3egcSglt47ujUuKB2hPvD3Um_TLISX1Qo7ORTsQ7Qhh1B5EFEfeTt0blxe43saatu8WAEgg9Y5tQ97R5_9WSNnZClvXSU5ARgo_Jc4bD2WY-cn8J_azjYVFAJfKb0VuYki3f2h6ZVgDzsa-4UGV86gLNGZ2En1vMzWO4dDjR09FO7lvXk3LFgWa59HnxPwWth-b6wbbd4IdaMn7MJfMMpc09z5AByJaOwWjhf5FfulgAU1pbgc-uAYI0r7noCYWry6oiE1wGb_pOJ__lebAuoCDUxPFQ80YvFDe5176ahgBgHIoh9cuitEArNnvCv2S9Vc3uZl7GTIrbXR5zI8jxzvYBkPGwn20mr8MRRZMxEQkXqvIQLy2yV_EELgHSCRDoYkYkkyIlZGOlJ5jhb7sQBwojfyh2S2nHQGNmNLjtW-4f4pnAJGRXZ4p2n5Bx780ll_oxHHUJzMuxdVhodJ0Jd31MnTQjqkSiM661qIoIsCmRytgLKH8RFGk23a3Ae_gifjEtAobiOGClv77FOam6aEFTqZmG_om_jDWa=s800-no");
+        servico10.setDescricao("No mercado da tecnologia, existem diversos modelos de processadores disponiveis, e geralmente eles são compostos por familias, que tem desde um Modelo i3 de entrada, para os mais modestos, até os modelos i5 e i7 para usuarios que precisam de mais processamento, e geralmente eles tem o mesmo tamanho e especificações, assim quando um cliente aparece com uma máquina i3 provavelmente nos conseguimos dar Upgrade nela até algum modelo i7.");
         servico10.setId("10");
         servicosArrayList.add(servico10);
         Servicos servico11 = new Servicos();
         servico11.setNome("Limpeza   Troca de Pasta Termica");
         servico11.setImagem("https://lh3.googleusercontent.com/KSNYaHXCw9vbP7jTnJ_sBzKQMPmiQ5DuERxjU8JjEBnr7wq2TmXANYrmzIHbCH-x4KKvo1c9_Y6gtutAsnqWCAaNliSfOjEuBX39er8XDPGa8akAUEYbPadImRbfxeJEDlYru1bA--0MMXbH6q7Su38osM433Laf4vZxbLOwSmkaStyw6xq-vXevm9Qvue1xcba6CI2uMXLQbdRdwydbHVky4nvOz_hmVWCgxy4BGUAgCRZxY-HvXfBl4yM0Au2Cpri-DlQyGGOqklfAbR-vwwG6RJOboGRtEGBYFYNuCbfIa6koBs3fzy2WArNfm7esRJlNhV97Y5fsVjHlpgT5sLVPYGg8hPWC3cmft5MGVAqyt2N5QrlEDDaSBcJiMIPBhStG4yaxt8TgCpjQ27C5--D1dcfq0Ap9ZnA9UJzglcAsjK2zCkiqCRExoRgfEQCOD7wAAymFjYUygdvpJRzXwNbgVP0zR-g6sOuREgDCyVWpBZvWRbGi5r6A75ZSlzDlQRJcYqqfYvlq2kYlE2EdF4c8ambi9TVbWmeJXmNDPT7qM9C7oONdhpag-ctM6Wd5Hl6mKPU6FZqApPTGxgxFw4sOQadXWNwNfSGB7B19ZVoux1Uo0sQ4I_xKCAjhq4ksjSwavCdxLzwhp8jyR-b_l0VI_5IQhIJXeQK2ds9OWnJd9rIY2d7bz2TUCdRil-KbJirBOimKN7qYg6bTMGk7qEK_0GrKAlQ_7_ZFMuVqhe70RwZP=s800-no");
+        servico11.setDescricao("O maior responsavel por danos em fontes e placas-mãe, provavelmente é a poeira, pois ela impede que os componentes sejam resfriados adequadamente, então executamos uma limpeza geral nas peças e aproveitamos para substituir a pasta térmica velha do processador.");
         servico11.setId("11");
         servicosArrayList.add(servico11);
 
