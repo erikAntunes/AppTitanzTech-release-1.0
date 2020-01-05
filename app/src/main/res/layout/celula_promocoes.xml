@@ -32,18 +32,18 @@
         <TextView
             android:id="@+id/textPromocoesNomeView_id"
             android:layout_marginLeft="18dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="top|center"
+            android:layout_gravity="center"
             android:gravity="center"
             android:text="Desenvolvimento \n Android Mobile"
             android:textColor="@color/colorPrimary"
-            android:textSize="20sp"
+            android:textSize="17sp"
             android:textStyle="bold" />
 
         <com.google.android.material.card.MaterialCardView
-            android:layout_width="150dp"
+            android:layout_width="160dp"
             android:layout_height="50dp"
             android:layout_marginLeft="15dp"
             android:layout_gravity="bottom|center"
@@ -57,7 +57,7 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:text="0199"
-            android:textSize="25sp"
+            android:textSize="23sp"
             android:textStyle="bold"
             android:textColor="@color/colorAccent"
             android:background="@color/colorPrimary"/>
