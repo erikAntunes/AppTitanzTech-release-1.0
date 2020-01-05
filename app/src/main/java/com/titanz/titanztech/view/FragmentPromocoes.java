@@ -114,6 +114,5 @@ public class FragmentPromocoes extends Fragment implements PromocoesListener {
 
         startActivity(intent);
 
-
     }
 }
