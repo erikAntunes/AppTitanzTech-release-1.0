@@ -11,8 +11,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.Window;
 import android.view.WindowManager;
-
-import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.tabs.TabLayout;
 
 import com.titanz.titanztech.adapters.ViewPagerAdapter;
@@ -25,17 +23,16 @@ import cn.pedant.SweetAlert.SweetAlertDialog;
 public class MainActivity extends AppCompatActivity {
 
     private TabLayout tabLayout;
-    private AppBarLayout appBarLayout;
     private ViewPager viewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().hide();
 
 
         tabLayout = findViewById(R.id.tablayout_main_id);
-        appBarLayout = findViewById(R.id.appbar_main_id);
         viewPager = findViewById(R.id.viewpager_main_id);
 
         ActionBar bar = getSupportActionBar();
