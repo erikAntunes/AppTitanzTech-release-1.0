@@ -38,7 +38,7 @@ public class FragmentContato extends Fragment {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(getContext(), LocalizacaoActivity.class);
+                Intent intent = new Intent(getContext(), MapsActivity.class);
                 startActivity(intent);
 
             }

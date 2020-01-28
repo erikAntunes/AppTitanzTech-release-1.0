@@ -6,18 +6,15 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.titanz.titanztech.R;
 import com.titanz.titanztech.adapters.ServicosAdapter;
 import com.titanz.titanztech.interfaces.ServicosListener;
 import com.titanz.titanztech.models.Servicos;
-
 import java.util.ArrayList;
 
 public class FragmentServicos extends Fragment implements ServicosListener {
