@@ -14,6 +14,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.titanz.titanztech.MainActivity;
 import com.titanz.titanztech.R;
 
 import cn.pedant.SweetAlert.SweetAlertDialog;
@@ -22,6 +23,7 @@ import cn.pedant.SweetAlert.SweetAlertDialog;
 public class FragmentContato extends Fragment {
 
     private ImageView whatsappButton;
+    private ImageView localizacaoButton;
 
     @Nullable
     @Override
@@ -30,6 +32,17 @@ public class FragmentContato extends Fragment {
         View view = inflater.inflate(R.layout.contato_fragment,container,false);
 
         view.setBackgroundColor(getResources().getColor(android.R.color.background_dark));
+
+        localizacaoButton = view.findViewById(R.id.localizacao_imageView_id);
+        localizacaoButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(getContext(), LocalizacaoActivity.class);
+                startActivity(intent);
+
+            }
+        });
 
         whatsappButton = view.findViewById(R.id.titanz_whatsapp_button_id);
 

@@ -14,10 +14,13 @@
         android:roundIcon="@drawable/titanz_icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.DetalhesPromocoesActivity"
-                android:screenOrientation="portrait"></activity>
-        <activity android:name=".view.DetalhesServicosActivity"
-            android:screenOrientation="portrait"/>
+        <activity android:name=".view.LocalizacaoActivity"></activity>
+        <activity
+            android:name=".view.DetalhesPromocoesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.DetalhesServicosActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".SplashActivity"
             android:screenOrientation="portrait">

@@ -50,7 +50,7 @@
     </com.google.android.material.card.MaterialCardView>
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/localizacao_imageView_id"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:src="@drawable/maps_icon"
@@ -69,7 +69,7 @@
         app:cardCornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView">
+        app:layout_constraintTop_toBottomOf="@+id/localizacao_imageView_id">
 
 
         <TextView
