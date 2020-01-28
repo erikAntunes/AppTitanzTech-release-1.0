@@ -47,8 +47,6 @@ public class MainActivity extends AppCompatActivity {
         adapter.AddFragment(new FragmentPromocoes(),"Promoções" );
         adapter.AddFragment(new FragmentContato(),"Contato" );
 
-        // Adapter Setup
-
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
 
