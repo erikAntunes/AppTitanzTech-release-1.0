@@ -1,9 +1,8 @@
 package com.titanz.titanztech.view;
 
 import androidx.fragment.app.FragmentActivity;
-
 import android.os.Bundle;
-
+import android.os.Handler;
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -12,6 +11,8 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.titanz.titanztech.R;
+
+import cn.pedant.SweetAlert.SweetAlertDialog;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
@@ -26,7 +27,20 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
+        final SweetAlertDialog pDialog = new SweetAlertDialog(this, SweetAlertDialog.PROGRESS_TYPE);
+        pDialog.getProgressHelper().setBarColor(R.color.colorPrimary);
+        pDialog.setTitleText("Carregando ...");
 
+        pDialog.setCancelable(true);
+
+        pDialog.show();
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                pDialog.dismiss();
+            }
+        },2000);
 
     }
 
