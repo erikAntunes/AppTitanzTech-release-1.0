@@ -3,6 +3,8 @@ package com.titanz.titanztech.view;
 import androidx.fragment.app.FragmentActivity;
 
 import android.os.Bundle;
+
+import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -23,6 +25,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
+
+
     }
 
 
@@ -40,8 +45,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        LatLng titanz = new LatLng(-23.68173816, -46.65033102);
+        mMap.addMarker(new MarkerOptions().position(titanz).title("Titanz Tech"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(titanz));
+
+        CameraUpdate update = CameraUpdateFactory.newLatLngZoom(titanz, 16);
+        mMap.animateCamera(update);
     }
+
 }
