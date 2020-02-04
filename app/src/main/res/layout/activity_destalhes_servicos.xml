@@ -52,7 +52,7 @@
                 android:padding="15dp"
                 android:text="Só salve quebrada vamos testar essa bagaça \n Mais uma linha sem informação decente \n muito bem ta tudo certo \n Só salve quebrada vamos testar essa bagaça \n Mais uma linha sem informação decente \n muito bem ta tudo certo \n Só salve quebrada vamos testar essa bagaça \n Mais uma linha sem informação decente \n muito bem ta tudo certo \n Só salve quebrada vamos testar essa bagaça \n Mais uma linha sem informação decente \n muito bem ta tudo certo"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="23sp" />
+                android:textSize="20sp" />
 
 
         </ScrollView>

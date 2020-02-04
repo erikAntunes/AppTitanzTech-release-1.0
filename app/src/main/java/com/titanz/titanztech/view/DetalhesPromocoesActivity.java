@@ -79,7 +79,7 @@ public class DetalhesPromocoesActivity extends AppCompatActivity {
         nomeDetalhePromocoesTextView.setText(promocao.getNome());
         detalhePromocoesTextView.setText(promocao.getDescricao());
         nomeDetalhePromocoesTextView.setText(promocao.getNome());
-        Picasso.get().load("https://i.ibb.co/NsJs4Qv/titanz-logo.png").into(detalhePromocoesImageView);
+        Picasso.get().load(promocao.getImagem()).into(detalhePromocoesImageView);
         precoDetalhesPromocoesTextView.setText(promocao.getValor());
     }
 
