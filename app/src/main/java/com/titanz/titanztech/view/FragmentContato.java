@@ -40,6 +40,7 @@ public class FragmentContato extends Fragment {
 
               //  Intent intent = new Intent(getContext(), MapsActivity.class);
               //  startActivity(intent);
+                Toast.makeText(getContext(), "... Em Breve!!!", Toast.LENGTH_SHORT).show();
 
             }
         });
