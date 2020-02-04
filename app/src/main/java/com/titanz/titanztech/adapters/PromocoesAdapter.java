@@ -4,17 +4,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.squareup.picasso.Picasso;
 import com.titanz.titanztech.R;
 import com.titanz.titanztech.interfaces.PromocoesListener;
 import com.titanz.titanztech.models.Promocoes;
-
 import java.util.List;
-
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class PromocoesAdapter extends RecyclerView.Adapter<PromocoesAdapter.DetalhePromocoesViewHolder> {
@@ -35,7 +31,7 @@ public class PromocoesAdapter extends RecyclerView.Adapter<PromocoesAdapter.Deta
 
     @NonNull
     @Override
-    public DetalhePromocoesViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+    public PromocoesAdapter.DetalhePromocoesViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
 
         View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.celula_promocoes,viewGroup,false);
 
@@ -74,6 +70,8 @@ public class PromocoesAdapter extends RecyclerView.Adapter<PromocoesAdapter.Deta
 
         private TextView textValorPromocoesView;
 
+        private CircleImageView circleImagePromocoesView;
+
 
 
         public DetalhePromocoesViewHolder(@NonNull View itemView) {
@@ -81,6 +79,7 @@ public class PromocoesAdapter extends RecyclerView.Adapter<PromocoesAdapter.Deta
 
             texNomePromocoesView = itemView.findViewById(R.id.textPromocoesNomeView_id);
             textValorPromocoesView = itemView.findViewById(R.id.textValorPromocoesView_id);
+            circleImagePromocoesView = itemView.findViewById(R.id.promocoes_imageView_id);
 
 
         }
@@ -89,6 +88,7 @@ public class PromocoesAdapter extends RecyclerView.Adapter<PromocoesAdapter.Deta
 
             textValorPromocoesView.setText(promocoes.getValor());
             texNomePromocoesView.setText(promocoes.getNome());
+           Picasso.get().load("https://i.ibb.co/NsJs4Qv/titanz-logo.png").into(circleImagePromocoesView);
 
         }
 

@@ -40,7 +40,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             public void run() {
                 pDialog.dismiss();
             }
-        },2000);
+        },2500);
 
     }
 

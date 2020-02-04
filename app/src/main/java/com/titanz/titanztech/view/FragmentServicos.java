@@ -104,7 +104,6 @@ public class FragmentServicos extends Fragment implements ServicosListener {
 
         recyclerViewServicos.setAdapter(servicosAdapter);
         recyclerViewServicos.setLayoutManager(layoutManager);
-
         return view;
     }
 

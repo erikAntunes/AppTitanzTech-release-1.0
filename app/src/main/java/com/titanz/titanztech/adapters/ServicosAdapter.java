@@ -53,6 +53,7 @@ public class ServicosAdapter extends RecyclerView.Adapter<ServicosAdapter.Detalh
         detalheServicosViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 servicosListener.onServicoClicado(listaServicos.get(i));
             }
         });

@@ -79,7 +79,6 @@ public class DetalhesServicosActivity extends AppCompatActivity {
         nomeDetalheServicoTextView.setText(servico.getNome());
         detalheServicoTextView.setText(servico.getDescricao());
         Picasso.get().load(servico.getImagem()).into(servicoImageView);
-
     }
 
     private void irParaHome() {

@@ -76,14 +76,11 @@ public class DetalhesPromocoesActivity extends AppCompatActivity {
 
         Promocoes promocao = (Promocoes) bundle.getSerializable("PROMOCOES");
 
-
         nomeDetalhePromocoesTextView.setText(promocao.getNome());
         detalhePromocoesTextView.setText(promocao.getDescricao());
         nomeDetalhePromocoesTextView.setText(promocao.getNome());
-        Picasso.get().load(promocao.getImagem()).into(detalhePromocoesImageView);
+        Picasso.get().load("https://i.ibb.co/NsJs4Qv/titanz-logo.png").into(detalhePromocoesImageView);
         precoDetalhesPromocoesTextView.setText(promocao.getValor());
-
-
     }
 
     private void irParaHome() {

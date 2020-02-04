@@ -113,6 +113,5 @@ public class FragmentPromocoes extends Fragment implements PromocoesListener {
         intent.putExtras(bundle);
 
         startActivity(intent);
-
     }
 }
